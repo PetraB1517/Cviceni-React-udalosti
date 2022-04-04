@@ -5,7 +5,7 @@ import React from 'react'
 // "Bublinou" se myslí alert v prohlížeči.
 
 const Uloha1 = () => {
-	return <button>Ukaž bublinu</button>
+	return <button onClick={() => alert("Ahoj")}>Ukaž bublinu</button>
 }
 
 export default Uloha1;

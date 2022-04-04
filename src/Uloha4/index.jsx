@@ -12,7 +12,7 @@ import React from 'react'
 
 
 const Pozdrav = ({ jmenoVeCtvrtemPade, jmenoVPatemPade }) => {
-	return <button>@TODO</button>
+	return <button onClick={() => alert(`Ahoj ${jmenoVPatemPade}`)}>Pozdrav {jmenoVeCtvrtemPade}</button>
 }
 
 // Zadání 3:

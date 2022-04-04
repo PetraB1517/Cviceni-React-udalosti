@@ -10,7 +10,7 @@ import React from 'react'
 // vypiš „Uživatel nenapsal nic“.
 
 const ZaverecnyBonus1 = () => {
-	return <input />
+	return <input onChange={(event) => {event.target.value =='' ? console.log('Uživatel nic nenapsal'): console.log('Uživatel napsal: ' + event.target.value)}}/>
 }
 
 export default ZaverecnyBonus1;

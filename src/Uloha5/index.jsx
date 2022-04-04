@@ -10,7 +10,7 @@ import React from 'react'
 
 
 const NakupniPolozka = ({ nazev }) => {
-	return <div>@TODO</div>
+	return <div> {nazev} <button onClick={() => console.log(`Uživatel chce koupit ${nazev}`)}> KOUPIT </button></div>
 }
 
 
@@ -24,8 +24,10 @@ const Uloha5 = () => {
 
 	return (
 		<>
-			<NakupniPolozka nazev="hrušky" />
-			<NakupniPolozka nazev="jablka" />
+			{polozky.map( item => 
+				<NakupniPolozka nazev= {item} />
+		)}
+
 		</>
 	)
 }
